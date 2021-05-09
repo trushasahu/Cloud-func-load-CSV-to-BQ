@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - functions
+  - deploy
+  - csv_loader
+  - --source=.
+  - --trigger-resource=third-campus-303308-func-bq-load
+  - --trigger-event=google.storage.object.finalize
+  - --region=europe-west2
+  - --runtime=python37
+  - --allow-unauthenticated
