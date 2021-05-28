@@ -1,5 +1,5 @@
 # Cloud-func-load-CSV-to-BQ
-Trigger a function to load cloud storage CSV file to big query table
+Create function using cloudbuild.yml from gcloud which to load cloud storage CSV file to big query table
 
 # How to execute through cloud build using gcloud command
 cmd: gcloud builds submit --config cloudbuild.yaml function-source.zip
